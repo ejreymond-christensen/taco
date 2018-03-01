@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
+  //Listens for a submit for new taco.
   $("#tacoSubmit").on("click", function(event){
     event.preventDefault();
-    console.log("Click")
     var newTaco = {
       taco_name: $("#tacoForm").val().trim(),
       devoured: 0
@@ -17,5 +17,19 @@ $(document).ready(function(){
     });
   });
 
-
+  //listens for a submit to devour the taco.
+  $(".devour").on("click", function(event) {
+    var id = $(this).data("id");
+    var devoured = {
+      devoured: 1
+    };
+    $.ajax("/api/tacos/" + id, {
+      type: "PUT",
+      data: devoured
+    }).then(
+      function() {
+        location.reload();
+      }
+    );
+  });
 });

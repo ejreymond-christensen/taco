@@ -1,3 +1,3 @@
 INSERT INTO tacos (taco_name)
 
-VALUES ("barbacoa"), ("lingua"), ("chorizo y huevos"), ("al pastor");
+VALUES ("Barbacoa"), ("Lengua"), ("Al Pastor"), ("Chapulines"), ("Carnitas de Pato");
