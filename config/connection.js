@@ -1,18 +1,6 @@
 var mysql = require("mysql");
 
-var connection;
-
-if(process.env.JAWSDB_UL){
-  connection = mysql.createConnection(process.env.JAWSDB_UL)
-}else {
-  connection = mysql.createConnection({
-   host: "localhost",
-   user: "root",
-   password: "",
-   database: "tacos_db"
- });
-}
-
+var connection= mysql.createConnection(process.env.JAWSDB_UL);
 
 // Make connection.
 connection.connect(function(err) {
