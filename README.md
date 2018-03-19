@@ -1,4 +1,4 @@
-# ut-taco
+# taco
 a taco logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
 
 ### Taco Time
@@ -10,4 +10,4 @@ One can add a taco by filling out the input form and hitting submit. This will a
 ### How to run the program
 you can go to : https://thawing-badlands-99892.herokuapp.com/
 
-or clone the repo `ut-taco`, clone the repo, `npm install` all the node dependencies and host it on our own node server. You will need to add the SQL schema to initialize the database.
+or clone the repo `taco`, clone the repo, `npm install` all the node dependencies and host it on our own node server. You will need to add the SQL schema to initialize the database.
